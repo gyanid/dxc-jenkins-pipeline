@@ -10,7 +10,7 @@ pipeline{
 
     tools{
 
-        maven "jenkins-mvn"
+        maven "mvn"
     }
 
     stages{
