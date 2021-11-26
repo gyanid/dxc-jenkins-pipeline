@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+
+    environment{
+
+        NAME='DXC'
+        COUNTRY='INDIA'
+        STATE='MH'
+    }
+
+    stages{
+
+        stage('Build'){
+            steps{
+                bat 'echo I work for %NAME% in %STATE% , %COUNTRY%'
+            }
+        }
+    }
+}
