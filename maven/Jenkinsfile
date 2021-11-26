@@ -1,9 +1,12 @@
 pipeline{
-     agent any
-    
-    jarLocation='C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\dxc-maven-pipeline\\target\\my-app-1.0-SNAPSHOT.jar'
 
-   
+    
+    agent any
+
+    environment{
+        jarLocation='C:\ProgramData\Jenkins\.jenkins\workspace\dxc-maven-pipeline\target\my-app-1.0-SNAPSHOT.jar'
+
+    }
 
     tools{
 
