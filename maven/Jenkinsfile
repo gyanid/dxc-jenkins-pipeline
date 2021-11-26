@@ -1,6 +1,6 @@
 pipeline{
 
-    def jarLocation='C:\ProgramData\Jenkins\.jenkins\workspace\dxc-maven-pipeline\target\my-app-1.0-SNAPSHOT.jar'
+    def jarLocation='C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\dxc-maven-pipeline\\target\\my-app-1.0-SNAPSHOT.jar'
 
     agent any
 
