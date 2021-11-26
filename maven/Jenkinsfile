@@ -1,4 +1,7 @@
 pipeline{
+
+    def jarLocation='C:\ProgramData\Jenkins\.jenkins\workspace\dxc-maven-pipeline\target\my-app-1.0-SNAPSHOT.jar'
+
     agent any
 
     tools{
@@ -16,6 +19,12 @@ pipeline{
                 bat 'mvn clean test package'
 
             }
+        }
+
+    }
+    post{
+        success{
+            bat 'java -jar ${jarLocation}'
         }
     }
 }
